@@ -10,11 +10,10 @@ import { useMediaQuery } from "@/hooks/use-media-query";
 import { Currencies, Currency } from "@/lib/currencies";
 import { useMutation, useQuery } from "@tanstack/react-query";
 
-// import { UserSettings } from "../../generated/prisma/client";
 import updateUserCurrencyAction from "@/app/wizard/_actions/update-user-currency";
 import { toast } from "sonner";
 import { SkeletonWrapper } from "./skeleton-wrapper";
-import { UserSettings } from "@/generated/prisma/client";
+import { UserSettings } from "@/generated/prisma-client/client";
 
 export function CurrencyComboBox() {
   const [open, setOpen] = React.useState(false);
