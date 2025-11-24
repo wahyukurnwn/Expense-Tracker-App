@@ -101,7 +101,7 @@ export const History = ({ userSettings }: { userSettings: UserSettings }) => {
             {!dataAvailable && (
               <Card className="flex h-[300px] flex-col items-center justify-center bg-background p-4">
                 No data for the selected period
-                <p className="text-sm text-muted-foreground">Try selecting a different period or adding new transactions</p>
+                <p className="text-sm text-center text-muted-foreground">Try selecting a different period or adding new transactions</p>
               </Card>
             )}
           </SkeletonWrapper>

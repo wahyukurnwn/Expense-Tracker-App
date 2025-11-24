@@ -32,7 +32,7 @@ export default function Page() {
         <Card>
           <CardHeader>
             <CardTitle>Category</CardTitle>
-            <CardDescription>Set your default currenct for transacton</CardDescription>
+            <CardDescription>Set your default currency for transaction</CardDescription>
           </CardHeader>
           <CardContent>
             <CurrencyComboBox />

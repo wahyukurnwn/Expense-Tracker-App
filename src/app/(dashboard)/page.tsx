@@ -29,7 +29,7 @@ export default async function Page() {
           <div className="flex items-center gap-3">
             <CreateTransactionDialog
               trigger={
-                <Button variant={"ghost"} className="border-emerald-500 bg-emerald-950 text-white hover:bg-emerald-700 hover:text-white">
+                <Button variant={"ghost"} className="border-emerald-300 bg-emerald-800 text-white hover:bg-emerald-700 dark:hover:bg-emerald-400 hover:text-white">
                   New income 😍
                 </Button>
               }
@@ -38,7 +38,7 @@ export default async function Page() {
 
             <CreateTransactionDialog
               trigger={
-                <Button variant={"ghost"} className="border-rose-500 bg-rose-950 text-white hover:bg-rose-700 hover:text-white">
+                <Button variant={"ghost"} className="border-rose-300 bg-rose-800 text-white hover:bg-rose-700 dark:hover:bg-rose-400 hover:text-white">
                   New expense 😵
                 </Button>
               }

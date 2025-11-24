@@ -45,9 +45,9 @@ function CategoriesCard({ formatter, type, data }: { formatter: Intl.NumberForma
   const total = filteredData.reduce((acc, item) => acc + (item._sum?.amount || 0), 0);
 
   return (
-    <Card className="h-80 w-full col-span-6 p-3">
+    <Card className="h-80 w-full col-span-6 gap-5 mt-3">
       <CardHeader>
-        <CardTitle className="grid grid-flow-row justify-between gap-2 text-2xl text-center text-muted-foreground font-bold md:grid-flow-col">{type === "income" ? "Incomes" : "Expenses"} by category</CardTitle>
+        <CardTitle className="grid grid-flow-row justify-between gap-2 text-2xl text-center dark:text-foreground  font-bold md:grid-flow-col">{type === "income" ? "Incomes" : "Expenses"} by category</CardTitle>
       </CardHeader>
 
       <div className="flex items-center justify-between gap-2">
