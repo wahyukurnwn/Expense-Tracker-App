@@ -3,7 +3,7 @@
 import { GetBalanceStatsResponseTye } from "@/app/api/stats/balance/route";
 import { SkeletonWrapper } from "@/components/skeleton-wrapper";
 import { Card } from "@/components/ui/card";
-import { UserSettings } from "@/generated/prisma/client";
+import { UserSettings } from "@/generated/prisma-client/client";
 import { DateToUTCDate, GetFormatterCurrency } from "@/lib/helpers";
 import { useQuery } from "@tanstack/react-query";
 import { TrendingDown, TrendingUp, Wallet } from "lucide-react";

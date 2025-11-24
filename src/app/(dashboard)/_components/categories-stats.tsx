@@ -5,12 +5,12 @@ import { SkeletonWrapper } from "@/components/skeleton-wrapper";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { UserSettings } from "@/generated/prisma-client/client";
 
 import { DateToUTCDate, GetFormatterCurrency } from "@/lib/helpers";
 import { TransactionType } from "@/lib/types";
 import { useQuery } from "@tanstack/react-query";
 import { useMemo } from "react";
-import { UserSettings } from "@/generated/prisma/client";
 
 interface Props {
   userSettings: UserSettings;

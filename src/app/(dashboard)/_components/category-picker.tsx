@@ -3,7 +3,7 @@
 import { TransactionType } from "@/lib/types";
 import { useQuery } from "@tanstack/react-query";
 import { useState, useCallback, useEffect } from "react";
-import { Category } from "@/generated/prisma/client";
+
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
@@ -11,6 +11,7 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, Command
 import { Check, ChevronsUpDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { CreateCategoryDialog } from "./create-category-dialog";
+import { Category } from "@/generated/prisma-client/client";
 
 interface Props {
   type: TransactionType;

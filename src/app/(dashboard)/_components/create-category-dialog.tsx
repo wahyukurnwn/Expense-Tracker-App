@@ -1,6 +1,6 @@
 "use client";
 
-import { Circle, CircleOff, Loader2, PlusSquare } from "lucide-react";
+import { CircleOff, Loader2, PlusSquare } from "lucide-react";
 import { ReactNode, useCallback, useState } from "react";
 import { Controller, Resolver, useForm } from "react-hook-form";
 import Picker from "@emoji-mart/react";
@@ -10,7 +10,7 @@ import { CreateCategorySchema, CreateCategorySchemaType } from "@/schema/categor
 import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 import { Input } from "@/components/ui/input";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -19,9 +19,10 @@ import { Dialog, DialogHeader, DialogContent, DialogTitle, DialogTrigger, Dialog
 import { Field, FieldDescription, FieldError, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { toast } from "sonner";
 import createCategoryAction from "../_actions/create-category-action";
-import { Category } from "@/generated/prisma/client";
+
 import { useTheme } from "next-themes";
 import { TransactionType } from "@/lib/types";
+import { Category } from "@/generated/prisma-client/client";
 interface Props {
   type: TransactionType;
   successCallback: (category: Category) => void;

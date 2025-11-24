@@ -12,7 +12,7 @@ import { SkeletonWrapper } from "@/components/skeleton-wrapper";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { cn } from "@/lib/utils";
 import CountUp from "react-countup";
-import { UserSettings } from "@/generated/prisma/client";
+import { UserSettings } from "@/generated/prisma-client/client";
 
 export const History = ({ userSettings }: { userSettings: UserSettings }) => {
   const [timeFrame, SetTimeFrame] = useState<TimeFrame>("month");

@@ -12,7 +12,7 @@ import { Separator } from "@radix-ui/react-dropdown-menu";
 import { cn } from "@/lib/utils";
 
 import { DeleteCategoryDialog } from "../_components/delete-category-dialog";
-import { Category } from "@/generated/prisma/client";
+import { Category } from "@/generated/prisma-client/client";
 
 export default function Page() {
   return (

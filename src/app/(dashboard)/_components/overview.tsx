@@ -9,7 +9,7 @@ import { StatsCards } from "./stats-cards";
 import { CategoriesStats } from "./categories-stats";
 
 import { MAX_DATE_RANGE_DAYS } from "@/lib/constants";
-import { UserSettings } from "@/generated/prisma/client";
+import { UserSettings } from "@/generated/prisma-client/client";
 
 export const Overview = ({ userSettings }: { userSettings: UserSettings }) => {
   const [dateRange, setDateRange] = useState<{ from: Date; to: Date }>({

@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { TransactionType } from "@/lib/types";
 import deleteCategoryAction from "../_actions/delete-category-action";
-import { Category } from "@/generated/prisma/client";
+import { Category } from "@/generated/prisma-client/client";
 
 interface Props {
   trigger: ReactNode;
